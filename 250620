@@ -1,2 +1,17 @@
 오늘 배운 내용
 
+비주얼스튜디오 코드 다운로드
+Explore 맨 첫줄 클릭 후 01_html 새폴더 생성
+!엔터 하면 자동으로 툴 나옴
+Document 제목 변경
+body 안에 명령어 작성 
+Alt+L+O 인터넷 창 결과 확인
+h1-h4 글자크기
+<!-- 주석--!>
+줄 바꿈은 BR
+문단 영역을 나누는 태그 p,pre
+그 밖에 텍스트를 다루는 태그 - STRONG , B, EM, MARK, U,SMALL,SUB,SUP
+목록관련태그 - OL 영문 소문자로 표기<OL TYPE="a"> 영문 대문자로 표기<OL TYPE="A">로마 소문자로 표기<OL TYPE="i">시작값 변경<OL TYPE="1"start="5">
+시작값 역순<OL reversed="reversed">
+
+설명 목록 태그 dl - 목록 제목dt, 목록안에 다른줄 DD
