@@ -1,0 +1,16 @@
+console.log(Boolean('javas')); //t
+console.log(Boolean(1));// true
+console.log(Boolean(Infinity)); // true
+console.log(Boolean({}));  // true
+console.log(Boolean([]));  // true
+
+console.log(Boolean('')); //f
+console.log(Boolean(0)); //f
+console.log(Boolean(NaN)); //f
+console.log(Boolean(null)); //false
+console.log(Boolean(undefined)); //false
+
+
+//!부정논리
+console.log(!('javas'));  // false
+console.log(!!('javas'));  // true
