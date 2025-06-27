@@ -1,9 +1,9 @@
-01_프로퍼티
+01_프로퍼티 (속성) -객체 안에 저장된 값을 뜻
 property는 이름과 값, 메서드를 가진다.
 var student ={
 
-    name:'유관순', //프로퍼티(name) 의 벨류
-    age:20
+    name (프로퍼티 이름):'유관순', //프로퍼티(name) 의 값
+    age(프로퍼티 이름):20 (값)
     
 };
 
@@ -11,12 +11,12 @@ var key ='test'; //프로퍼티 키를 동적 생성
 obj[key]='test value';
 console.log(obj);
 
-02 메소드method
+02 메소드method (동작)
 함수 객체. 값으로 취급할 수 있고 프로퍼티 값으로도 사용가능
 
     var dog1={
         name1:'두리',
-        eat:function(food){
+        eat:function(food){ //eat는 메소드 이름, function는 메소드 동작//es6의 기능으로 생략도 가능
             console.log(`${this.name1}는 ${food} 먹어요.`);
 
         }
@@ -29,5 +29,20 @@ dog['eat']('고구마');
 console.log(obj['dash-key']);  // 네이밍 규칙 준수해야 나옴. '문자열'[]대괄호 필수
 console.log(obj['0']);
 
+//프로퍼티 값을 변경, 추가, 삭제
 
+
+var dog={  name : '뽀삐'};
+
+//이미 뽀삐라고 주어진 프로퍼티 값을 두부로 변경
+dog.name='두부'
+console.log(dog);
+
+//프로퍼티 동적 추가
+dog.age=3;
+console.log(dog);
+
+//프로퍼티 삭제 delete연산자를 사용해서 프로퍼티를 삭제한다.
+delete dog.age;
+console.log(dog);
 
