@@ -46,3 +46,58 @@ console.log(dog);
 delete dog.age;
 console.log(dog);
 
+
+
+함수. 두둥.
+
+//함수 선언문
+
+function hello(name){
+    return `${name}님 안녕하세요`;
+
+}
+console.log(hello('홍길동'));
+
+//자바 스크립트 엔진은 생성된 함수를 호출하기 위해
+//함수 이름과 동일한 식별자를 암묵적으로 생성함
+//즉 함수는 함수 이름 
+
+//함수 표현식에서 함수명을 생략해도 됨
+var calc =function add(a,b){
+    return a+b;
+}
+
+
+//화살표 함수
+var message;
+//기존 함수 정의
+message=function(){
+    return 'hello world';
+
+}
+console.log(message());
+
+//function 생략 가능
+message=() =>{
+    return 'Arrow function';
+}
+
+//명령문이 하나만 있을 경우 중괄호, return 생략 가능
+message =() =>"Arrow Fun";
+console.log(message());
+
+message = (val1, val2) => `Arrow fun:${val1+val2}`;
+
+console.log(message(10,20));
+
+//매개변수가 하나면 소괄호도 생략 가능
+message = value => `hello ${value}`;
+
+console.log(message('world'));
+
+
+//function 대신 =>함수 정의할 때 function 빼도 됨
+//코드가 한 줄이면 {} 생략 가능
+
+
+
