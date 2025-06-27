@@ -100,4 +100,32 @@ console.log(message('world'));
 //코드가 한 줄이면 {} 생략 가능
 
 
+//콜백 함수
+//함수의 매개변수를 통해 다른 함수의 내부로 전달되는 함수를 콜백함수라 함//
+//매개 변수를 통해 함수의 외부에서 콜백 함수를 전달 받는 함수를 고차 함수라한다.
+// 콜백 함수는 고차 함수에 전달 되어 헬퍼 함수의 역할을 한다.
+
+//전달 받은 값을 증가
+function increase(value){
+    return value +1;
+
+}
+//전달 받은 값을 감소
+function decrease(value){
+    return value -1;
+}
+//전달 받은 함수에 전달 받은 값을 적용 시켜주는 고차함수
+function apply(func,value){
+    return func(value);
+}
+
+console.log(apply(increase,5));
+console.log(apply(decrease,5));
+
+console.log(apply(function(value){return value **2;},5));
+
+
+//순수와 비순수 함수 내용 배움. 기능 만들때 거의 함수 사용함. 
+//함수로 다 표현되기 때문에 개념을 잡아야 나중에 가능.
+
 
